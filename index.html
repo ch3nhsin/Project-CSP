@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+	<script src="https://kit.fontawesome.com/d1ee1d15b3.js" crossorigin="anonymous"></script>    
+	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
    <ul>
-	 <li><a href="#" style="color:white;">Menu<a/>
+	 <li><a href="#" style="color:white;">Menu</a>
 	    <ul>
 	         <li><a href="aboutme.html" style="color:grey;">About Me</a></li>
              <li><a href="portfolio.html" style="color:grey;">Portfolio</a></li>
@@ -27,14 +28,29 @@
 	<br>
 <center><h1 style="font-size:10px;color:white;"><b>chinese music<b></h1></center>
 <center><iframe width="700" height="420" src="https://www.youtube.com/embed/ZZx2_N6IwzQ"> </iframe></center>
-<br>
-	<center>
+<br>	
+<center>
 	<body>
-	<center><h1 style="font-size:30px;color:white;"><b>California, Oregon, and New York<b></h1></center>
-	  <img src="image/CAhome.jpg">
-	  <img src="image/ORhome.jpg">
-	  <img src="image/NYhome.jpg">     
-	</body> 
-    </center>	
+	<h1 style="font-size:30px;color:white;"><b>California, Oregon, and New York<b></h1>
+		<body>
+			<div class="carousel-container">
+				<i class="fas fa-arrow-left" id="prevBtn"></i>
+				<i class="fas fa-arrow-right" id="nextBtn"></i>
+				<div class="carousel-slide">
+					<img src="image/NYhome.jpg" id="lastClone">
+					  <img src="image/CAhome.jpg">
+					  <img src="image/ORhome.jpg">
+					  <img src="image/NYhome.jpg">
+					<img src="image/CAhome.jpg" id="firstClone">
+		
+				</div> 
+			</div>
+		
+			<button id="prevBtn"></button>
+			<button id="nextBtn"></button>
+			<script src="app.js"></script>
+		</body> 	
+	</body>
+</center> 
   </body>
 </html>
