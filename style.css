@@ -20,7 +20,7 @@ ul li{
 }
 ul li a{
 	text-decoration: none;
-	color; white;
+	color: white;
 	display: block;
 }
 ul li a:hover {
@@ -31,4 +31,44 @@ ul li ul li {
 }
 ul li:hover ul li {
 	display: block;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.carousel-container{
+	width: 37%;
+	margin: auto;
+	border: 5px solid black;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-slide{
+	display: flex;
+	width: 100%;
+	height:500px;
+}
+
+#prevBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 30px;
+	color: white;
+	opacity: 0.7;
+}
+
+#nextBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 30px;
+	color: white;
+	opacity: 0.7;
 }
